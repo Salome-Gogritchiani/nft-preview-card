@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.nft-card {
+  font-family: "Outfit", sans-serif;
+  width: 350px;
+  height: 596px;
+  margin-top: 152px;
+  background-color: rgba(21, 38, 63, 1);
+   padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  transition: transform 0.3s;
+  cursor: pointer;
+} 
+
+.nft-card:hover {
+  transform: scale(1.05);
+}
+
+.image-container {
+  width: 302px;
+  height: 302px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nft-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 255, 255, 0.4);
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .hover-overlay {
+  opacity: 1;
+}
+
+.nft-title {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27.72px;
+  text-align: left;
+  
+}
+
+.nft-description {
+font-size: 18px;
+font-weight: 300;
+line-height: 26px;
+text-align: left;
+color: rgba(139, 172, 217, 1);
+
+
+}
+
+.nft-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.price {
+font-size: 16px;
+font-weight: 600;
+line-height: 20.16px;
+text-align: left;
+color: rgba(0, 255, 248, 1);
+
+  transition: color 0.3s;
+}
+.price span{
+  width: 11px;
+height: 18px;
+margin-top: 1px;
+margin-right: 4px;
+}
+
+.time-left {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.16px;
+  text-align: left;git add 
+}
+.time-left span{
+  width: 16px;
+  height: 16px;
+  margin-top:  5px;
+  color: rgba(139, 172, 217, 1);
+  margin-right: 4px;
+}
+.creator-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  border-top: 1px solid  rgba(46, 64, 90, 1);
+  
+}
+.creator-info p{
+font-size: 16px;
+font-weight: 400;
+line-height: 20.16px;
+text-align: left;
+color: rgba(139, 172, 217, 1);
+
+}
+.creator-image {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+
+.creator-name {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.16px;
+  text-align: left;
+  transition: color 0.3s;
+}
+.nft-card:hover{
+  background: rgba(21, 38, 63, 1);
+
+}
+.nft-card:hover .nft-title,
+.nft-card:hover .price,
+.nft-card:hover .creator-name {
+  color:  rgba(0, 255, 248, 1);
+
+}
